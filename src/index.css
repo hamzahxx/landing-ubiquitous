@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@layer components {
+    .navbar-header {
+        @apply font-sans font-bold text-3xl;
+    }
 }
