@@ -4,8 +4,14 @@
 // Used to import from public folder
 // import viteLogo from "/vite.svg";
 
+import Navbar from "./components/Navbar";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
