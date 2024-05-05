@@ -6,4 +6,15 @@
     .navbar-header {
         @apply font-sans font-bold text-3xl;
     }
+    .nav-list {
+        @apply top-14 left-[-42rem] absolute mx-auto w-52
+
+        md:relative md:top-0 md:left-0 md:flex md:w-auto md:mx-0 md:ml-auto;
+    }
+    .nav-item {
+        @apply text-center px-3 py-1 mt-1 mx-2 font-sans font-medium
+        border-2 border-transparent rounded-xl cursor-pointer
+        ease-in duration-150 block
+        hover:border-black;
+    }
 }
