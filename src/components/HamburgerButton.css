@@ -1,0 +1,103 @@
+.hamburger-menu {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.active .bar1 {
+    animation: bar1Active 0.5s forwards;
+}
+
+.active .bar2 {
+    animation: bar2Active 0.5s forwards;
+}
+
+.active .bar3 {
+    animation: bar3Active 0.5s forwards;
+}
+
+.inactive .bar1 {
+    animation: bar1Inactive 0.5s forwards;
+}
+
+.inactive .bar2 {
+    animation: bar2Inactive 0.5s forwards;
+}
+
+.inactive .bar3 {
+    animation: bar3Inactive 0.5s forwards;
+}
+
+@keyframes bar1Active {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(9px) rotate(45deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(45deg);
+    }
+}
+
+@keyframes bar2Active {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes bar3Active {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+@keyframes bar1Inactive {
+    0% {
+        transform: translateY(9px) rotate(45deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes bar2Inactive {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bar3Inactive {
+    0% {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
