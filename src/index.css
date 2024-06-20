@@ -3,12 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-    .navbar-header {
-        @apply font-sans font-bold text-3xl;
-    }
     .nav-list {
-        @apply top-14 left-[-42rem] absolute h-screen w-56 duration-300 ease-in-out bg-white
-
+        @apply top-14 left-[-42rem] absolute h-[89vh] w-56 duration-300 ease-in-out bg-white
         md:relative md:top-0 md:left-0 md:flex md:h-auto md:w-auto md:mx-0 md:ml-auto;
     }
     .nav-item {
